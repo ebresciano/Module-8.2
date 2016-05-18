@@ -4,7 +4,7 @@ import UIKit
 
 var str = "Hello, playground"
 
-class Person {
+class Person: Equatable {
     let firstName: String
     let lastName: String
     let age: Int
@@ -17,6 +17,9 @@ class Person {
     }
 }
 
+func ==(lhs: Person, rhs: Person) -> Bool {
+    return lhs.firstName == rhs.firstName && lhs.lastName == rhs.lastName && lhs.age == rhs.age
+}
 
 let james = Person(firstName: "James", lastName: "Pacheco", age: 26)
 let andrea = Person(firstName: "Andrea", lastName: "Mower", age: 24)
