@@ -34,9 +34,8 @@ clubMembers.append(pongo)
 func areYouAMemberOfTheClub(person: Person) -> Bool {
      return clubMembers.contains(person)
     
-
-  
-    
-    
 }
+
+areYouAMemberOfTheClub(pongo)
+areYouAMemberOfTheClub(kip)
 
